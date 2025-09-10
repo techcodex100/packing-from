@@ -1,5 +1,6 @@
 fastapi==0.104.1
 uvicorn==0.24.0
 PyPDF2==3.0.1
-pydantic==2.5.0
+pydantic==2.7.4
+pydantic-core==2.18.4
 python-multipart==0.0.6

@@ -296,8 +296,8 @@ async def extract_json(file: UploadFile = File(...)):
     """Legacy endpoint for backward compatibility - extracts form fields from PDF"""
     try:
         # Validate file type
-    if not file.filename.lower().endswith(".pdf"):
-        raise HTTPException(status_code=400, detail="Please upload a PDF file.")
+        if not file.filename.lower().endswith(".pdf"):
+            raise HTTPException(status_code=400, detail="Please upload a PDF file.")
         
         # Create upload directory
         upload_dir = "./uploaded_files"
